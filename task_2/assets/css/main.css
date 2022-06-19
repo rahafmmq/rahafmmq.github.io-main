@@ -1,0 +1,171 @@
+/*start header*/
+.links-menu {
+float: right;
+}
+
+.logo {
+    width:80px;
+    bottom:500px;
+}
+
+.mountain {
+    width:900px;
+}
+
+h1 {
+    position: relative;
+    bottom:500px;
+    left:500px;
+    color:rgb(62, 204, 204);
+}
+
+.p {
+    position: relative;
+    bottom:500px;
+    left:400px;
+    color:rgb(62, 204, 204);
+
+}  
+
+/*end header*/
+
+/*start first main*/
+.icons1 {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom:70px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    width: 40px;
+}
+ 
+.headding1 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom:70px;
+    left:50px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    color:rgb(17, 14, 60);
+}
+
+.paragraph1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    position: relative;
+    bottom:70px;
+    left:50px;
+    color:black;
+}
+ 
+.magic {
+    display: block;
+    position: relative;
+    left:200px;
+     width:90px;
+}
+
+.gem {
+    position: relative;
+   left:710px;
+}
+
+.world {
+    position: relative; 
+    left:1300px;
+}
+
+.first-main {
+    color:rgb(62, 204, 204);
+
+}
+
+.hed1 {
+     position: relative;
+     right:90px;
+}
+ 
+.hed3 {
+    position: relative;
+    left:90px;
+}
+/*end first main*/
+
+/*start sec main*/
+.icons2 {
+    display: flex;
+    justify-content: space-around;
+    color:rgb(62, 204, 204) ;
+}
+
+.Graphic-Design {
+    position: relative;
+    bottom:25px;
+}
+
+.Wep-Design {
+    position: relative;
+    bottom:25px;
+}
+
+.Graphic-Design,
+.Wep-Design {
+    color:rgb(24, 19, 81);
+     position: relative;
+     left: 340px;
+}
+
+.pen,
+.ring {
+    position: relative;
+    left: 400px;
+}
+
+.usp {
+    position: relative;
+    top: 55px;
+}
+
+.UI-UX {
+    position: relative;
+    top: 30px;
+}
+
+.lap {
+    position: relative;
+    top: 55px;
+  
+}
+
+.Wep-Development {
+    position: relative;
+    top: 30px;
+}
+
+.usp,
+.lap {
+    position: relative;
+    right: 200px;
+    top: 150px;
+}
+
+.UI-UX,
+.Wep-Development{
+    color:rgb(24, 19, 81);
+    position: relative;
+    right: 250px;
+    top: 125px;
+}
+
+.main-pic {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: 150px;
+}
+ 
