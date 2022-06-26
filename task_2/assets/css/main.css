@@ -1,55 +1,164 @@
 /*start header*/
+header .logo {
+    width: 100px;
+}
+header {
+    padding: 20px;
+    align-items: center;
+}
+
+header .links-menu {
+    position: relative;
+}
+
+header .links-menu:hover .menu span:nth-child(2) {
+    width:100%;
+}
+
+header .links-menu .menu {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+header .links-menu .menu span {
+    background: color #222;
+    margin-bottom:5px;
+    height: 2px;
+}
+
+header .links-menu .menu span:first-child {
+    height: 3px;
+    width: 100%;
+}
+
+header .links-menu .menu span:nth-child(2) {
+    height: 3px;
+    width: 60%;
+    transition: 0.3s;
+}
+
+header .links-menu .menu span:last-child {
+    height: 3px;
+    width: 100%;
+}
+
+header .links-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+}
+
+header .links-menu ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+header .links-menu ul li a {
+    display: block;
+}
+
+header .links-menu ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+header .links-menu ul li a:hover {
+    padding-left: 25px;
+}
+
 .links-menu {
-float: right;
+    float: right;
 }
+/*end header*/
 
-.logo {
-    width:80px;
-    bottom:500px;
-}
-
-.mountain {
-    width:900px;
-}
-
-h1 {
+/*start landing*/
+.landing {
+    background-image: url(/task_2/assets/img/mountain.jpg);
+    background-size: cover;
+    height:calc(100vh - 76px);
     position: relative;
-    bottom:500px;
-    left:500px;
-    color:rgb(62, 204, 204);
+} 
+
+.landing .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
 }
 
-.p {
-    position: relative;
-    bottom:500px;
-    left:400px;
-    color:rgb(62, 204, 204);
+.landing .text h1 {
+    margin: 0;
+    color: rgb(9, 193, 187);
+}
 
-}  
+.landing .text p {
+    font-size: 19px;
+    line-height: 1.8;
+}
 
 /*end header*/
 
 /*start first main*/
+.first-main {
+    display: block;
+    position: relative;
+    top: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding: 60px;
+    background-color: #f6f6f6;
+    flex-wrap: wrap;
+}
+
+.first-main .icons1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+
+
 .icons1 {
     display: block;
     display: flex;
     justify-content: space-between;
     position: relative;
-    bottom:70px;
+    bottom: 60px;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     width: 40px;
 }
  
-.headding1 {
+.heading1 {
     display: flex;
     justify-content: space-between;
     position: relative;
-    bottom:70px;
+    bottom:60px;
     left:50px;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-    color:rgb(17, 14, 60);
+    color:rgb(5, 4, 61);
+    font-weight: bold;
 }
 
 .paragraph1 {
@@ -72,12 +181,14 @@ h1 {
 
 .gem {
     position: relative;
-   left:710px;
+    left:700px;
+    top: 40px;
 }
 
 .world {
     position: relative; 
-    left:1300px;
+    left:1200px;
+    top: 75px;
 }
 
 .first-main {
@@ -96,76 +207,246 @@ h1 {
 }
 /*end first main*/
 
+/*start sevices*/
+.services {
+    position: relative;
+    top: 80px;
+}
+
+.special-heading {
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: -4px;
+    margin: 0;
+    position: relative;
+    top: 40px;
+}
+
+.special-heading + p {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    color: #707070;
+}
+/*end sevices*/
+
 /*start sec main*/
-.icons2 {
-    display: flex;
-    justify-content: space-around;
-    color:rgb(62, 204, 204) ;
-}
-
-.Graphic-Design {
+.srv-control {
     position: relative;
-    bottom:25px;
+    top: 230px;
+    background-color: white;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
 }
 
-.Wep-Design {
-    position: relative;
-    bottom:25px;
+.srv-control {
+    flex-direction: column;
+    text-align: center;
 }
 
-.Graphic-Design,
-.Wep-Design {
-    color:rgb(24, 19, 81);
-     position: relative;
-     left: 340px;
+.srv-control i {
+    color: rgb(62, 204, 204);
+    flex-basis: 60px;
 }
 
-.pen,
-.ring {
-    position: relative;
-    left: 400px;
-}
-
-.usp {
-    position: relative;
-    top: 55px;
-}
-
-.UI-UX {
-    position: relative;
-    top: 30px;
-}
-
-.lap {
-    position: relative;
-    top: 55px;
-  
-}
-
-.Wep-Development {
-    position: relative;
-    top: 30px;
-}
-
-.usp,
-.lap {
-    position: relative;
-    right: 200px;
-    top: 150px;
-}
-
-.UI-UX,
-.Wep-Development{
-    color:rgb(24, 19, 81);
-    position: relative;
-    right: 250px;
-    top: 125px;
+.srv-control h2 {
+    color: rgb(17, 14, 60);
+    float: 1;
 }
 
 .main-pic {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    right: 150px;
+   text-align: center;
+   width: 240px;
+   height: 260px;
+   position: relative;
+   left: 130px;
+   float: right;
 }
- 
+
+.main-pic::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    background-color: rgb(5, 4, 61);
+    width: 900px;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+}
+/*end sec main*/
+
+/*start portfolio*/
+.Portfolio {
+    display: block;
+    position: relative;
+    top: 300px;
+    left: 90px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.Portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-bottom: 100px;
+}
+
+.Portfolio .card {
+    background-color: white;
+    position: relative;
+    left: 300px;
+    top: 90px;
+}
+
+.Portfolio .card img {
+    max-width: 100%;
+} 
+
+.Portfolio .card .info {
+    padding: 20px;
+}
+
+.Portfolio .card .info h3 {
+    margin: 0;
+}
+
+
+.Portfolio .card .info p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+/*end portfolio*/
+
+/* start about*/
+.about {
+    position: relative;
+    top: 300px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.about-content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+.imge {
+    position: relative;
+    width: 250px;
+    height: 375px;
+    position: relative;
+    top: 130px;
+    padding-left: 30px;
+}
+
+.imge::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(194, 184, 184);
+    width: 60px;
+    height: 260px;
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+}
+
+.imge::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 180px;
+    border-left: 80px solid rgb(62, 204, 204);
+    border-bottom: 80px solid rgb(62, 204, 204);
+    z-index: -3;
+    right: -150px;
+    top: -35px;
+}
+
+.about .text {
+    flex-basis: calc(100% - 500px);
+    position: relative;
+    top: 100px;
+}
+.about .text p:first-of-type {
+    font-weight: bolder;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+.about .text hr {
+    width: 50%;
+    display: inline-block;
+    border-color: rgb(62, 204, 204);
+}
+
+.about .text p:last-of-type {
+    line-height: 1;
+    color: #777;
+}
+/*end about*/
+
+/*start contact*/
+.contact {
+    position: relative;
+    top: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f6f6f6;
+}
+
+.contact .info {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.label {
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(5, 4, 61);
+    letter-spacing: -1px;
+}
+
+.contact .link {
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-weight: 800;
+    color: rgb(62, 204, 204) ;
+}
+
+.contact .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color:rgb(5, 4, 61) ;
+}
+
+.contact i {
+    margin-left: 10px;
+}
+/*end contact*/
+
+/*start footer*/
+.footer {
+    position: relative;
+    top: 312px;
+    background-color: rgb(5, 4, 61);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
